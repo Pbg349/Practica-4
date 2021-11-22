@@ -1,7 +1,5 @@
 # Practica-4
 
-# -------------------------------------------------------------------------------
-
 En ésta práctica, procederemos como en la Práctica-3 de IAW "Arquitectura de una aplicación web LAMP en dos niveles" añadiendo una nueva máquina con servidor Apache, conectada a la arquitectura, creando una capa frontend con 2 servidores apache y una capa backend con un único servidor MYSQL, tal como en la práctica-3 nombrada anteriormente, la comprobación final del trabajo realizado será conectarnos desde ambas máquinas al servidor MYSQL:
 
 
@@ -39,7 +37,7 @@ apt install php libapache2-mod-php php-mysql -y
 systemctl restart apache2
 
 
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
 
 # Configuramos MYSQL:
@@ -56,7 +54,7 @@ sed -i "s/127.0.0.1/0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
 systemctl restart mysql
 
-# --------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
 # Ahora configuraremos ambas máquinas que formarán la capa Frontend:
 
@@ -70,7 +68,7 @@ set -x
 IP_MYSQL=54.205.73.187
 
 
-# --------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
 
 # Instalamos la pila LAMP:
@@ -156,7 +154,7 @@ set -x
 
 IP_MYSQL=54.205.73.187
 
-#-------------------------------------------------------------------
+# -------------------------------------------------------------------
 
 # Instalamos pila LAMP:
 
